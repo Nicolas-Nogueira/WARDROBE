@@ -9,7 +9,13 @@ Features:
 * Mobile-friendly design
 * Easy and straightforward to use
 
-Create the virtual environment
-- python3 -m venv venv
+Create the virtual environmen/run
 - source venv/bin/activate
+- export FLASK_APP=app.py
+- export FLASK_ENV=development
+- flask run
+
+
+
+
 

@@ -12,7 +12,7 @@ CREATE TABLE clothing (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     category TEXT NOT NULL,
-    image_url TEXT,
+    file_path TEXT,
     is_favorite INTEGER DEFAULT 0
 )
 ''')
