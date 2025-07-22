@@ -1,21 +1,102 @@
-<!-- header section -->
-navbar with logo | brand name (left) + login/signup buttons (right)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wardrobe App</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- header section -->
+    <header class="header-container">
+        <!-- Left section: logo image -->
+        <div class="header-item">
+            <h1>Wardrobe</h1>
+        </div>
+        <!-- Right section: login/sign up -->
+        <div class="header-item">
+            <button class="header-button" type="button">login</button>
+            <button class="header-button" type="button">signup</button>
+        </div>
+    </header>
+    <!-- hero section -->
+     <main>
+        <div>
+            <h2>Build Your Fit Archive</h2>
+            <h3>Outfits start here</h3>
 
-<!-- hero section -->
-large heading: "Build Your Fit Archive"
-subheading: "Outfits start here."
+            <h2>Add Clothing Item</h2>
+            <form method="POST" action="/add">
+            <label>Name:</label>
+            <input type="text" name="name" required><br>
 
-button: "Add Clothing"
-button: "Generate Outfit"
+            <label>Category:</label>
+            <select name="category">
+                <option>Shirts</option>
+                <option>Pants</option>
+                <option>Jackets</option>
+                <option>Hoodies</option>
+                <option>Accessories</option>
+                <option>Watches</option>
+                <option>Hats</option>
+            </select><br>
 
-<!-- categories grid -->
-grid layout with placeholders for each category:
-[Shirts] [Pants] [Jackets] [Sweaters] [Accessories] etc.
+            <label>Image URL:</label>
+            <input type="text" name="image_url"><br>
 
-each block shows:
-- image
-- name of item
-- button to 'favorite' or 'add to outfit'
+            <button type="submit">Add Item</button>
+            </form>
+
+            <button type="button">Generate Outfit</button> 
+         </div>
+     </main>
+
+     <!-- categories grid -->
+     <section class="categories-section">
+        <h2 class="section-title">Categories</h2>
+      
+        <div class="grid-categories">
+          <!-- Category Card -->
+          <div class="category-card">
+            <img src="/static/images/shirts.png" alt="Shirts">
+            <p>Shirts</p>
+          </div>
+      
+          <div class="category-card">
+            <img src="/static/images/pants.png" alt="Pants">
+            <p>Pants</p>
+          </div>
+      
+          <div class="category-card">
+            <img src="/static/images/jackets.png" alt="Jackets">
+            <p>Jackets</p>
+          </div>
+      
+          <div class="category-card">
+            <img src="/static/images/hoodies.png" alt="Hoodies">
+            <p>Hoodies</p>
+          </div>
+      
+          <div class="category-card">
+            <img src="/static/images/accessories.png" alt="Accessories">
+            <p>Accessories</p>
+          </div>
+      
+          <div class="category-card">
+            <img src="/static/images/watches.png" alt="Watches">
+            <p>Watches</p>
+          </div>
+      
+          <div class="category-card">
+            <img src="/static/images/hats.png" alt="Hats">
+            <p>Hats</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- Optional: link to JS if you have it -->
+    <!-- <script src="/static/js/script.js"></script> -->
+</body>
+</html>
 
 
 
